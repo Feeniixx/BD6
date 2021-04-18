@@ -324,10 +324,9 @@ namespace LinqTutorials
         /// </summary>
         public static IEnumerable<Emp> Task12()
         {
-              IEnumerable<Emp> result =null;
             
-            return result.GetEmpsWithSubordinates(); 
-
+                IEnumerable<Emp> result = CustomExtensionMethods.GetEmpsWithSubordinates(Emps);
+                return result;
         }
 
         /// <summary>
